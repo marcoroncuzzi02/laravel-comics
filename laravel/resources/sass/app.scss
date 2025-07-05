@@ -6,3 +6,35 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+};
+
+.navbar .container-fluid{
+    padding-inline: 10%;
+    display: flex;
+    
+}
+
+.jumbotron{
+    position: relative;
+}
+
+.jumbotron img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.jumbotron .tag{
+    position: absolute;
+    bottom: -20px;
+    left: 15%;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+}
