@@ -1,7 +1,79 @@
-@extends("layouts.master")
+@extends("layouts.master");
 
-@section("contenuto")
+@php
 
-<h1>layout in laravel</h1>
+    $comics=config("comics");
+
+@endphp
+
+@section("contenuto");
+
+<div class=" bg-dark text-light container ">
+
+    <div class=" row row-cols-4 text-center ">
+
+        @foreach($comics as $comic)
+
+            <div class="col ">
+
+                <x-card>
+
+                    <x-slot:title>
+                        
+                        {{ $comic['title'] }}
+                        
+                    </x-slot:title>
+
+                    <x-slot:description>
+                        
+                        {{ $comic['description'] }}
+                        
+                    </x-slot:description>
+
+                    <x-slot:thumb>
+                        
+                        {{ $comic['thumb'] }}
+                        
+                    </x-slot:thumb>
+
+                    <x-slot:price>
+                        
+                        {{ $comic['price'] }}
+                        
+                    </x-slot:price>
+
+                    <x-slot:series>
+                        
+                        {{ $comic['series'] }}
+                        
+                    </x-slot:series>
+
+                    <x-slot:sale_date>
+                        
+                        {{ $comic['sale_date'] }}
+                        
+                    </x-slot:sale_date>
+
+                    <x-slot:type>
+                        
+                        {{ $comic['type'] }}
+                        
+                    </x-slot:type>
+
+                    <x-slot:artists>
+                        
+                        {{ implode(', ', $comic['artists'] ) }}
+                        
+                    </x-slot:artists>
+                
+                </x-card>
+
+            </div>
+
+        @endforeach
+
+    </div>
+
+</div>
 
 @endsection

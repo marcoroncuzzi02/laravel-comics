@@ -9,6 +9,7 @@
     
 </head>
 <body>
+    
     @include('partials.header')
 
     @yield("contenuto")
