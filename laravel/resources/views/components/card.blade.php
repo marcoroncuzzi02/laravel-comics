@@ -1,34 +1,31 @@
-<div class="card">
-
-    <h3>
-        {{ $title}}
-    </h3>
-
-    <p>
-        {{$description}}
-    </p>
+<a href="" class="card p-2 m-3 bg-dark">
 
     <p>
         {{$thumb}}
     </p>
 
     <p>
+        {{ $title}}
+    </p>
+
+    <!-- <p>
+        {{$description}}
+    </p> -->
+
+    <!-- <p>
         {{$price}}
-    </p>
+    </p> -->
 
-    <p>
+    <!-- <p>
         {{$sale_date}}
-    </p>
+    </p> -->
 
-    <p>
+    <!-- <p>
         {{$type}}
-    </p>
+    </p> -->
 
-    <p>
+    <!-- <p>
         {{$artists}}
-    </p>
+    </p> -->
 
-
-    {{ $slot }}
-
-</div>
+</a>

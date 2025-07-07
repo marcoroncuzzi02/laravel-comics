@@ -18,53 +18,53 @@
 
                 <x-card>
 
-                    <x-slot:title>
-                        
-                        {{ $comic['title'] }}
-                        
-                    </x-slot:title>
-
-                    <x-slot:description>
+                    <!-- <x-slot:description>
                         
                         {{ $comic['description'] }}
                         
-                    </x-slot:description>
+                    </x-slot:description> -->
 
                     <x-slot:thumb>
                         
-                        {{ $comic['thumb'] }}
-                        
+                        <img class="comic-image" src="{{ $comic['thumb'] }}" alt="">
+
                     </x-slot:thumb>
 
-                    <x-slot:price>
+                    <x-slot:title>
+                        
+                        <span class="fw-bold fs-5 text-uppercase text-light text-decoration-none">{{ $comic['title'] }}</span>
+                        
+                    </x-slot:title>
+
+                    <!-- <x-slot:price>
                         
                         {{ $comic['price'] }}
                         
-                    </x-slot:price>
+                    </x-slot:price> -->
 
-                    <x-slot:series>
+                    <!-- <x-slot:series>
                         
                         {{ $comic['series'] }}
                         
-                    </x-slot:series>
+                    </x-slot:series> -->
 
-                    <x-slot:sale_date>
+                    <!-- <x-slot:sale_date>
                         
                         {{ $comic['sale_date'] }}
                         
-                    </x-slot:sale_date>
+                    </x-slot:sale_date> -->
 
-                    <x-slot:type>
+                    <!-- <x-slot:type>
                         
                         {{ $comic['type'] }}
                         
-                    </x-slot:type>
+                    </x-slot:type> -->
 
-                    <x-slot:artists>
+                    <!-- <x-slot:artists>
                         
                         {{ implode(', ', $comic['artists'] ) }}
                         
-                    </x-slot:artists>
+                    </x-slot:artists> -->
                 
                 </x-card>
 
